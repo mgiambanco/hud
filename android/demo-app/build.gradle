@@ -2,10 +2,6 @@ plugins {
     id 'com.android.application'
 }
 
-def apikeyPropertiesFile = rootProject.file("../.env")
-def apikeyProperties = new Properties()
-apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
-
 android {
     compileSdk 31
 
@@ -15,9 +11,6 @@ android {
         targetSdk 31
         versionCode 1
         versionName "1.0"
-
-        buildConfigField("String", "ACTIVELOOK_SDK_TOKEN", apikeyProperties['ACTIVELOOK_SDK_TOKEN'])
-        buildConfigField("int", "ACTIVELOOK_CFG_PASSWORD", apikeyProperties['ACTIVELOOK_CFG_PASSWORD'])
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -40,7 +33,7 @@ dependencies {
 
     implementation 'com.google.android.material:material:1.6.1'
 
-    implementation 'com.github.activelook:android-sdk:v4.5.0'
+    implementation 'com.github.activelook:android-sdk:v4.5.4'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

@@ -14,7 +14,6 @@ public class DemoApp extends Application {
 
     private Sdk alsdk;
     private boolean connected;
-    private String token = BuildConfig.ACTIVELOOK_SDK_TOKEN;
     private Consumer<GlassesUpdate> onUpdateStart;
     private Consumer<Pair<GlassesUpdate, Runnable>> onUpdateAvailableCallback;
     private Consumer<GlassesUpdate> onUpdateProgress;
@@ -42,7 +41,6 @@ public class DemoApp extends Application {
             Log.d("GLASSES_UPDATE", String.format("onUpdateError  : %s", gu));
         };
         this.alsdk = Sdk.init(this.getApplicationContext(),
-            token,
             this::onUpdateStart,
             this::onUpdateAvailableCallback,
             this::onUpdateProgress,

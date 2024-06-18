@@ -23,32 +23,27 @@ class GlassesTableViewController: UITableViewController {
     
     // MARK: - Private properties
 
-    private let scanDuration: TimeInterval = 10.0
-    private let connectionTimeoutDuration: TimeInterval = 5.0
+    private let scanDuration: TimeInterval = 20.0
+    private let connectionTimeoutDuration: TimeInterval = 120.0
     
     private var scanTimer: Timer?
     private var connectionTimer: Timer?
     
-    private lazy var alookSDKToken: String = {
-        guard let infoDictionary: [String: Any] = Bundle.main.infoDictionary else { return "" }
-        guard let activelookSDKToken: String = infoDictionary["ACTIVELOOK_SDK_TOKEN"] as? String else { return "" }
-        return activelookSDKToken
-    }()
-    
     private lazy var activeLook: ActiveLookSDK = {
         try! ActiveLookSDK.shared(
-                token: alookSDKToken,
-                   onUpdateStartCallback: { SdkGlassesUpdate in
-                    print("onUpdateStartCallback")
-                }, onUpdateAvailableCallback: { (SdkGlassesUpdate, _: () -> Void) in
-                    print("onUpdateAvailableCallback")
-                }, onUpdateProgressCallback: { SdkGlassesUpdate in
-                    print("onUpdateProgressCallback")
-                }, onUpdateSuccessCallback: { SdkGlassesUpdate in
-                    print("onUpdateSuccessCallback")
-                }, onUpdateFailureCallback: { SdkGlassesUpdate in
-                    print("onUpdateFailureCallback")
-                })
+                onUpdateStartCallback: { SdkGlassesUpdate in
+                 print("onUpdateStartCallback")
+             }, onUpdateAvailableCallback: { (SdkGlassesUpdate, authorize: () -> Void) in
+                 authorize()
+             }, onUpdateProgressCallback: { SdkGlassesUpdate in
+                 print("onUpdateProgressCallback:",
+                    " \(SdkGlassesUpdate.getSourceFirmwareVersion()) -> \(SdkGlassesUpdate.getTargetFirmwareVersion())",
+                    " =>\(String(format: "%.2f", SdkGlassesUpdate.getProgress()))%")
+             }, onUpdateSuccessCallback: { SdkGlassesUpdate in
+                 print("onUpdateSuccessCallback")
+             }, onUpdateFailureCallback: { SdkGlassesUpdate in
+                 print("onUpdateFailureCallback")
+         })
     }()
 
     private var discoveredGlassesArray: [DiscoveredGlasses] = []
