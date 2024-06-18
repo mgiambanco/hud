@@ -91,24 +91,6 @@ class GlassesTableViewController: UITableViewController {
                 self.connecting = false
                 self.connectionTimer?.invalidate()
                 if (glasses.isFirmwareAtLeast(version: "4.0")) {
-//                    (glasses.compareFirmwareAtLeast(version: "4.0").rawValue > 0) {
-//                        let alert = UIAlertController(title: "Update application", message: "The glasses firmware is newer. Check the store for an application update.", preferredStyle: .alert)
-//                        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-//                        self.present(alert, animated: true)
-//                         } else {
-                    
-                    // TO UPLOAD CONFIG, ADD YOUR CONFIG.TXT FILE TO THE PROJECT,
-                    // THEN UNCOMMENT THE FOLLOWING BLOCK /*...*/
-                    // AND FINALLY REPLACE THE RESSOURCE NAME WITH YOUR CONFIG'S NAME
-/*                         if let filePath = Bundle.main.path(forResource: "ConfigDemo-4.0.txt", ofType: "txt") {
-                             do {
-                                 let cfg = try String(contentsOfFile: filePath)
-                                 glasses.loadConfiguration(cfg: cfg.components(separatedBy: "\n"))
-                             } catch {}
-*/
-                    
-//                         }
-//                    }
                     let viewController = CommandsMenuTableViewController(glasses)
                     self.navigationController?.pushViewController(viewController, animated: true)
                 } else {

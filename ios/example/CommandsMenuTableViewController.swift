@@ -32,6 +32,7 @@ class CommandsMenuTableViewController: CommandsTableViewController {
             "Optical sensor",
             "Graphics",
             "Image",
+            "Animation",
             "Font",
             "Layout",
             "Page",
@@ -48,6 +49,7 @@ class CommandsMenuTableViewController: CommandsTableViewController {
             self.showOpticalCommands,
             self.showGraphicsCommands,
             self.showImageCommands,
+            self.showAnimationCommands,
             self.showFontCommands,
             self.showLayoutCommands,
             self.showPageCommands,
@@ -94,6 +96,10 @@ class CommandsMenuTableViewController: CommandsTableViewController {
     
     func showImageCommands() {
         navigationController?.pushViewController(ImageCommandsViewController(glasses), animated: true)
+    }
+    
+    func showAnimationCommands(){
+        navigationController?.pushViewController(AnimationCommandsViewController(glasses), animated: true)
     }
     
     func showFontCommands() {
