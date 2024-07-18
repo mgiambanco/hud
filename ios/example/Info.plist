@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>ACTIVELOOK_CFG_PASSWORD</key>
-	<string>$(ACTIVELOOK_CFG_PASSWORD)</string>
-	<key>ACTIVELOOK_SDK_TOKEN</key>
-	<string>$(ACTIVELOOK_SDK_TOKEN)</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
@@ -30,5 +26,10 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>bluetooth-central</string>
+		<string>processing</string>
+	</array>
 </dict>
 </plist>

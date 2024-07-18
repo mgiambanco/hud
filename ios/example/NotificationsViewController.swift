@@ -31,15 +31,9 @@ class NotificationsViewController: UIViewController {
 
     // MARK: - Private properties
 
-    private lazy var alookSDKToken: String = {
-        guard let infoDictionary: [String: Any] = Bundle.main.infoDictionary else { return "" }
-        guard let activelookSDKToken: String = infoDictionary["ACTIVELOOK_SDK_TOKEN"] as? String else { return "" }
-        return activelookSDKToken
-    }()
-    
     private lazy var activeLook: ActiveLookSDK = {
         try! ActiveLookSDK.shared(
-                token: alookSDKToken,
+                reserved: "D0mAnVHNG_jr3iFjVnJ0XX9tGJV9RU8oeY-Ewoh6QZY",
                    onUpdateStartCallback: { SdkGlassesUpdate in
                     print("onUpdateStartCallback")
                 }, onUpdateAvailableCallback: { (SdkGlassesUpdate, _: () -> Void) in
