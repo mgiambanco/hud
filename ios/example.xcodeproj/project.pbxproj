@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,28 +12,12 @@
 		2307D96D27329CB9000732DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2307D96B27329CB9000732DC /* Main.storyboard */; };
 		2307D96F27329CBA000732DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2307D96E27329CBA000732DC /* Assets.xcassets */; };
 		2307D97227329CBA000732DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2307D97027329CBA000732DC /* LaunchScreen.storyboard */; };
-		2307D9892732C1CB000732DC /* OpticalCommandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2307D97A2732C1CB000732DC /* OpticalCommandsViewController.swift */; };
-		2307D98A2732C1CB000732DC /* FontCommandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2307D97B2732C1CB000732DC /* FontCommandsViewController.swift */; };
-		2307D98B2732C1CB000732DC /* CommandsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2307D97C2732C1CB000732DC /* CommandsTableViewController.swift */; };
-		2307D98C2732C1CB000732DC /* StatisticsCommandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2307D97D2732C1CB000732DC /* StatisticsCommandsViewController.swift */; };
-		2307D98D2732C1CB000732DC /* LayoutCommandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2307D97E2732C1CB000732DC /* LayoutCommandsViewController.swift */; };
-		2307D98E2732C1CB000732DC /* GaugeCommandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2307D97F2732C1CB000732DC /* GaugeCommandsViewController.swift */; };
-		2307D98F2732C1CB000732DC /* GlassesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2307D9802732C1CB000732DC /* GlassesTableViewController.swift */; };
-		2307D9902732C1CB000732DC /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2307D9812732C1CB000732DC /* NotificationsViewController.swift */; };
-		2307D9912732C1CB000732DC /* GraphicsCommandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2307D9822732C1CB000732DC /* GraphicsCommandsViewController.swift */; };
-		2307D9922732C1CB000732DC /* ImageCommandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2307D9832732C1CB000732DC /* ImageCommandsViewController.swift */; };
-		2307D9932732C1CB000732DC /* ConfigurationCommandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2307D9842732C1CB000732DC /* ConfigurationCommandsViewController.swift */; };
-		2307D9942732C1CB000732DC /* CommandsMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2307D9852732C1CB000732DC /* CommandsMenuTableViewController.swift */; };
-		2307D9952732C1CB000732DC /* PageCommandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2307D9862732C1CB000732DC /* PageCommandsViewController.swift */; };
-		2307D9962732C1CB000732DC /* DisplayCommandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2307D9872732C1CB000732DC /* DisplayCommandsViewController.swift */; };
-		2307D9972732C1CB000732DC /* GeneralCommandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2307D9882732C1CB000732DC /* GeneralCommandsViewController.swift */; };
+		2307D98F2732C1CB000732DC /* GlassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2307D9802732C1CB000732DC /* GlassesViewController.swift */; };
 		23923B742747AF0400C441AA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 23923B732747AF0400C441AA /* README.md */; };
+		341CA5112D1EE99900C84427 /* ActiveLookSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 341CA5102D1EE99900C84427 /* ActiveLookSDK */; };
+		349A017D2D3056E100C12D07 /* SwiftOBD2 in Frameworks */ = {isa = PBXBuildFile; productRef = 349A017C2D3056E100C12D07 /* SwiftOBD2 */; };
 		AA0570181C20B536CE9E2A25 /* Pods_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44D6776A95277934A2901B7 /* Pods_example.framework */; };
-		B5696C4E29813A1700F3B72A /* ViewerCommandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5696C4D29813A1700F3B72A /* ViewerCommandsViewController.swift */; };
 		B5BA1BB22C21793F00F85C90 /* demo-cfg.txt in Resources */ = {isa = PBXBuildFile; fileRef = B5BA1BB12C21793F00F85C90 /* demo-cfg.txt */; };
-		B5D05B1A2C216BA700A8E6C3 /* AnimationCommandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D05B192C216BA700A8E6C3 /* AnimationCommandsViewController.swift */; };
-		B5D7C5792948D15000F55A70 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C5762948D15000F55A70 /* ImagePicker.swift */; };
-		B5D7C57A2948D15000F55A70 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C5772948D15000F55A70 /* ImagePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,30 +28,12 @@
 		2307D96E27329CBA000732DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2307D97127329CBA000732DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2307D97327329CBA000732DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2307D97A2732C1CB000732DC /* OpticalCommandsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpticalCommandsViewController.swift; sourceTree = "<group>"; };
-		2307D97B2732C1CB000732DC /* FontCommandsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontCommandsViewController.swift; sourceTree = "<group>"; };
-		2307D97C2732C1CB000732DC /* CommandsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsTableViewController.swift; sourceTree = "<group>"; };
-		2307D97D2732C1CB000732DC /* StatisticsCommandsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsCommandsViewController.swift; sourceTree = "<group>"; };
-		2307D97E2732C1CB000732DC /* LayoutCommandsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutCommandsViewController.swift; sourceTree = "<group>"; };
-		2307D97F2732C1CB000732DC /* GaugeCommandsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaugeCommandsViewController.swift; sourceTree = "<group>"; };
-		2307D9802732C1CB000732DC /* GlassesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlassesTableViewController.swift; sourceTree = "<group>"; };
-		2307D9812732C1CB000732DC /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
-		2307D9822732C1CB000732DC /* GraphicsCommandsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphicsCommandsViewController.swift; sourceTree = "<group>"; };
-		2307D9832732C1CB000732DC /* ImageCommandsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCommandsViewController.swift; sourceTree = "<group>"; };
-		2307D9842732C1CB000732DC /* ConfigurationCommandsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationCommandsViewController.swift; sourceTree = "<group>"; };
-		2307D9852732C1CB000732DC /* CommandsMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsMenuTableViewController.swift; sourceTree = "<group>"; };
-		2307D9862732C1CB000732DC /* PageCommandsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCommandsViewController.swift; sourceTree = "<group>"; };
-		2307D9872732C1CB000732DC /* DisplayCommandsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayCommandsViewController.swift; sourceTree = "<group>"; };
-		2307D9882732C1CB000732DC /* GeneralCommandsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralCommandsViewController.swift; sourceTree = "<group>"; };
+		2307D9802732C1CB000732DC /* GlassesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlassesViewController.swift; sourceTree = "<group>"; };
 		23923B732747AF0400C441AA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3DFA9A596BAECA13F99E62D5 /* Pods-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.debug.xcconfig"; path = "Target Support Files/Pods-example/Pods-example.debug.xcconfig"; sourceTree = "<group>"; };
 		73AE00685FDF7E762F27B93B /* Pods-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.release.xcconfig"; path = "Target Support Files/Pods-example/Pods-example.release.xcconfig"; sourceTree = "<group>"; };
 		B44D6776A95277934A2901B7 /* Pods_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5696C4D29813A1700F3B72A /* ViewerCommandsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewerCommandsViewController.swift; sourceTree = "<group>"; };
 		B5BA1BB12C21793F00F85C90 /* demo-cfg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "demo-cfg.txt"; sourceTree = "<group>"; };
-		B5D05B192C216BA700A8E6C3 /* AnimationCommandsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationCommandsViewController.swift; sourceTree = "<group>"; };
-		B5D7C5762948D15000F55A70 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		B5D7C5772948D15000F55A70 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +41,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				341CA5112D1EE99900C84427 /* ActiveLookSDK in Frameworks */,
 				AA0570181C20B536CE9E2A25 /* Pods_example.framework in Frameworks */,
+				349A017D2D3056E100C12D07 /* SwiftOBD2 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,30 +74,12 @@
 				2307D96527329CB9000732DC /* AppDelegate.swift */,
 				23923B7C274D646600C441AA /* Assets */,
 				2307D96E27329CBA000732DC /* Assets.xcassets */,
-				2307D9852732C1CB000732DC /* CommandsMenuTableViewController.swift */,
-				2307D97C2732C1CB000732DC /* CommandsTableViewController.swift */,
-				2307D9842732C1CB000732DC /* ConfigurationCommandsViewController.swift */,
-				2307D9872732C1CB000732DC /* DisplayCommandsViewController.swift */,
-				2307D97B2732C1CB000732DC /* FontCommandsViewController.swift */,
-				2307D97F2732C1CB000732DC /* GaugeCommandsViewController.swift */,
-				2307D9882732C1CB000732DC /* GeneralCommandsViewController.swift */,
-				2307D9802732C1CB000732DC /* GlassesTableViewController.swift */,
-				2307D9822732C1CB000732DC /* GraphicsCommandsViewController.swift */,
-				2307D9832732C1CB000732DC /* ImageCommandsViewController.swift */,
-				B5D7C5762948D15000F55A70 /* ImagePicker.swift */,
-				B5D7C5772948D15000F55A70 /* ImagePickerViewController.swift */,
+				2307D9802732C1CB000732DC /* GlassesViewController.swift */,
 				2307D97327329CBA000732DC /* Info.plist */,
 				2307D97027329CBA000732DC /* LaunchScreen.storyboard */,
-				2307D97E2732C1CB000732DC /* LayoutCommandsViewController.swift */,
 				2307D96B27329CB9000732DC /* Main.storyboard */,
-				2307D9812732C1CB000732DC /* NotificationsViewController.swift */,
-				2307D97A2732C1CB000732DC /* OpticalCommandsViewController.swift */,
-				2307D9862732C1CB000732DC /* PageCommandsViewController.swift */,
 				23923B732747AF0400C441AA /* README.md */,
 				2307D96727329CB9000732DC /* SceneDelegate.swift */,
-				2307D97D2732C1CB000732DC /* StatisticsCommandsViewController.swift */,
-				B5696C4D29813A1700F3B72A /* ViewerCommandsViewController.swift */,
-				B5D05B192C216BA700A8E6C3 /* AnimationCommandsViewController.swift */,
 			);
 			path = example;
 			sourceTree = "<group>";
@@ -205,6 +155,10 @@
 				Base,
 			);
 			mainGroup = 2307D95927329CB9000732DC;
+			packageReferences = (
+				341CA50F2D1EE99900C84427 /* XCLocalSwiftPackageReference "../../ios-sdk" */,
+				349A017B2D3056E100C12D07 /* XCRemoteSwiftPackageReference "SwiftOBD2" */,
+			);
 			productRefGroup = 2307D96327329CB9000732DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -277,26 +231,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2307D96627329CB9000732DC /* AppDelegate.swift in Sources */,
-				2307D9952732C1CB000732DC /* PageCommandsViewController.swift in Sources */,
-				2307D98A2732C1CB000732DC /* FontCommandsViewController.swift in Sources */,
-				2307D98E2732C1CB000732DC /* GaugeCommandsViewController.swift in Sources */,
-				2307D9972732C1CB000732DC /* GeneralCommandsViewController.swift in Sources */,
-				2307D98F2732C1CB000732DC /* GlassesTableViewController.swift in Sources */,
-				B5D7C57A2948D15000F55A70 /* ImagePickerViewController.swift in Sources */,
-				2307D9962732C1CB000732DC /* DisplayCommandsViewController.swift in Sources */,
-				B5D7C5792948D15000F55A70 /* ImagePicker.swift in Sources */,
+				2307D98F2732C1CB000732DC /* GlassesViewController.swift in Sources */,
 				2307D96827329CB9000732DC /* SceneDelegate.swift in Sources */,
-				2307D98D2732C1CB000732DC /* LayoutCommandsViewController.swift in Sources */,
-				2307D9932732C1CB000732DC /* ConfigurationCommandsViewController.swift in Sources */,
-				2307D9892732C1CB000732DC /* OpticalCommandsViewController.swift in Sources */,
-				B5D05B1A2C216BA700A8E6C3 /* AnimationCommandsViewController.swift in Sources */,
-				2307D9922732C1CB000732DC /* ImageCommandsViewController.swift in Sources */,
-				2307D9902732C1CB000732DC /* NotificationsViewController.swift in Sources */,
-				2307D9912732C1CB000732DC /* GraphicsCommandsViewController.swift in Sources */,
-				B5696C4E29813A1700F3B72A /* ViewerCommandsViewController.swift in Sources */,
-				2307D98B2732C1CB000732DC /* CommandsTableViewController.swift in Sources */,
-				2307D9942732C1CB000732DC /* CommandsMenuTableViewController.swift in Sources */,
-				2307D98C2732C1CB000732DC /* StatisticsCommandsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +382,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 54U8KC82CU;
+				DEVELOPMENT_TEAM = S9J2JNJNL7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = example/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
@@ -461,7 +397,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.microoled.exampleAL;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mgiambanco.activeview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -477,7 +413,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 54U8KC82CU;
+				DEVELOPMENT_TEAM = S9J2JNJNL7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = example/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
@@ -492,7 +428,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.microoled.exampleAL;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mgiambanco.activeview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -522,6 +458,36 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		341CA50F2D1EE99900C84427 /* XCLocalSwiftPackageReference "../../ios-sdk" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../ios-sdk";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		349A017B2D3056E100C12D07 /* XCRemoteSwiftPackageReference "SwiftOBD2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kkonteh97/SwiftOBD2/";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		341CA5102D1EE99900C84427 /* ActiveLookSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ActiveLookSDK;
+		};
+		349A017C2D3056E100C12D07 /* SwiftOBD2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 349A017B2D3056E100C12D07 /* XCRemoteSwiftPackageReference "SwiftOBD2" */;
+			productName = SwiftOBD2;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2307D95A27329CB9000732DC /* Project object */;
 }

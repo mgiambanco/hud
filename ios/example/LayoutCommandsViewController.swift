@@ -17,8 +17,8 @@ import Foundation
 import ActiveLookSDK
 
 class LayoutCommandsViewController : CommandsTableViewController {
-    
-
+	
+	
     // MARK: - Life cycle
     
     override func viewDidLoad() {
@@ -47,7 +47,7 @@ class LayoutCommandsViewController : CommandsTableViewController {
         commandActions = [
 //            self.listLayouts,
             self.displayTimeLayout,
-            self.displayChronoLayout,
+			self.displayChronoLayout,
             self.clearAndDisplayChronoLayout,
             self.clearAndDisplayChronoLayoutExended,
             self.displayDistanceLayout,
@@ -71,14 +71,18 @@ class LayoutCommandsViewController : CommandsTableViewController {
 //        glasses.layoutList()
 //    }
     
+	// keep - use for gear
     func displayTimeLayout() {
         glasses.cfgSet(name: "ALooK")
-        glasses.layoutDisplay(id: 10, text: "15:36")
+        glasses.layoutDisplay(id: 10, text: "1")
     }
     
-    func displayChronoLayout() {
-        glasses.cfgSet(name: "ALooK")
-        glasses.layoutDisplay(id: 11, text: "00:00:10")
+	// keep -
+	func displayChronoLayout()  {
+		self.clear()
+		
+		
+		
     }
     
     func clearAndDisplayChronoLayout() {
